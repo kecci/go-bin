@@ -6,3 +6,20 @@ sdk library for bin
 | ------ | ------- |
 | binlist | https://binlist.net/ |
 | freebinchecker | https://www.freebinchecker.com/ |
+
+
+## usage binlist
+
+```go
+package main
+
+import "github.com/kecci/go-bin/binlist"
+
+func main() {
+    res, err := binlist.BinLookup("548988")
+    if err != nil {
+        return
+    }
+    fmt.Println(*res)
+}
+```
